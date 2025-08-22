@@ -1,11 +1,10 @@
 "use client";
 
+const Home = () =>{
 type Morador = {
   primeiroNome: string;
   sobrenome: string;
-};
-
-export default function Home() {
+}
 
   function formatarNomeMorador(morador: Morador){
     return morador.primeiroNome + ' ' + morador.sobrenome;
@@ -14,7 +13,7 @@ export default function Home() {
   const morador = {
     primeiroNome: 'Sandro',
     sobrenome: 'pereira'
-  };
+  }
 
   function obterSaudacao(morador: null | Morador){
     if (morador){
@@ -23,11 +22,14 @@ export default function Home() {
     return <span>Olá, Estranho</span>;
   }
 
-  <h1 className="text-2xl font-semibold">{obterSaudacao(null)}</h1>
   return (
-    <h1 className="text-2xl font-semibold">{obterSaudacao(null)}</h1>
-  //   <div className="flex flex-col items-center justify-center h-screen">
-  //     <h1 className="text-4xl font-bold">{formatarNomeMorador(morador)}</h1>
-  //   </div>
-  );
-};
+    <div className="flex flex-col items-center justify-center h-screen">
+      <div className="bg-blue-9000 py-5 px-20 rounded-md">
+        <h1 className="text-4xl font-bold">{obterSaudacao(morador)}</h1>
+      </div>
+
+    </div>
+  )
+}
+
+export default Home
