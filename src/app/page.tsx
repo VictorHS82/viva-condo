@@ -1,6 +1,6 @@
 "use client";
 
-const Home = () =>{
+export default function Home() {
 type Morador = {
   primeiroNome: string;
   sobrenome: string;
@@ -22,14 +22,13 @@ type Morador = {
     return <span>Olá, Estranho</span>;
   }
 
-  return (
-    <div className="flex flex-col items-center justify-center h-screen">
-      <div className="bg-blue-9000 py-5 px-20 rounded-md">
-        <h1 className="text-4xl font-bold">{obterSaudacao(morador)}</h1>
+ return (
+    <div id="principal" className="min-h-screen flex items-center justify-center bg-black">
+      <div id="componente-azul" className="bg-blue-500 text-white rounded-lg p-8 max-w-sm w-full flex items-center justify-center"> {/* card-azul*/}
+        <h1 id="name" className="text-2xl font-bold text-center">
+          {obterSaudacao(morador)}
+        </h1>
       </div>
-
     </div>
-  )
+  );
 }
-
-export default Home
