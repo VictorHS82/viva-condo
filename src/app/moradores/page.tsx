@@ -1,10 +1,10 @@
 "use client";
 
-export default function ListaCondominios() {
+export default function ListaMoradores() {
     return(
         <div className="p-6 max-w-full">
             <div className="mb-4 flex items-center justify-between gap-4">
-             <h1 className="text-xl font-semibold">Condominios</h1>
+             <h1 className="text-xl font-semibold">Moradores</h1>
             </div>
         <div className="bg-white rounded-md border border-gray-200 overflow-hidden">
           <table className="min-w-full divide-y divide-gray-200">
@@ -15,21 +15,19 @@ export default function ListaCondominios() {
                     <th className="px-4 py-3 text-left text-xs font-medium text-gray-500
                     tracking-wider">Nome</th>
                     <th className="px-4 py-3 text-left text-xs font-medium text-gray-500
-                    tracking-wider">Endereço</th>
+                    tracking-wider">Contato</th>
                     <th className="px-4 py-3 text-left text-xs font-medium text-gray-500
-                    tracking-wider">Cidade</th>
+                    tracking-wider">Condominio</th>
                     <th className="px-4 py-3 text-left text-xs font-medium text-gray-500
-                    tracking-wider">UF</th>
-                    <th className="px-4 py-3 text-left text-xs font-medium text-gray-500
-                    tracking-wider">Tipo</th>
+                    tracking-wider">Unidade</th>
                     <th className="px-4 py-3 text-left text-xs font-medium text-gray-500
                     tracking-wider">Ação</th>
                 </tr>
             </thead>
             <body className="divide-y divide-gray-200 bg-white">
               <tr>
-                <td className="px-4 py-3 text-sm text-gray-700" colSpan={7}>
-                  Nenhum condominio encontrado
+                <td className="px-4 py-3 text-sm text-gray-700" colSpan={6}>
+                  Nenhum usuário encontrado
                 </td>
               </tr>
             </body>
