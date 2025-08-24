@@ -24,13 +24,13 @@ export default function ListaUsuarios() {
                     tracking-wider">Ação</th>
                 </tr>
             </thead>
-            <body className="divide-y divide-gray-200 bg-white">
+            <tbody className="divide-y divide-gray-200 bg-white">
               <tr>
                 <td className="px-4 py-3 text-sm text-gray-700" colSpan={6}>
                   Nenhum usuário encontrado
                 </td>
               </tr>
-            </body>
+            </tbody>
           </table>
         </div>
         </div>

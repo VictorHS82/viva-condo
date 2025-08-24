@@ -1,5 +1,5 @@
 export interface ICondominio {
-    id_codniminio: string;
+    id_condominio: string;
     nome_condominio: string;
     endereco_condominio: string;
     cidade_condominio: string;
